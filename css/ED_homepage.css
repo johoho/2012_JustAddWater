@@ -1,0 +1,216 @@
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+
+/* =============================================================================
+   Base
+
+   @colordef yellow: #FFE323;
+   @colordef light grey: #C8C8C8;
+   @colordef dark grey: #646464;
+   @colordef green: #00F0C5;
+   @colordef pink: #FF6699;
+   ========================================================================== */
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { background-color:#FFE323;
+      }
+
+a {text-decoration: none;}
+
+.wrapper {width: 1000px;
+          margin: 0 auto;}
+
+
+/* ==|== Header =======================================================
+   
+   ========================================================================== */
+
+header{ border-bottom: 5px solid white;
+        box-shadow: 0px 5px 10px #888888;
+        padding: 5px;
+      }
+
+.logo { float:left;
+      }
+
+header > .rhs { float:right;
+                padding: 5px;
+                font-family: 'Poiret One', sans-serif; 
+                font-weight: 400;
+              }
+
+.logIn {  float: right;
+          background-color: #C8C8C8;
+          padding: 5px;
+          font-size: 14px;
+          border: 1px solid white;
+        }
+
+.logIn, .socialMedia_icons {display: inline-block;}
+
+.signIn_button {background-color: 646464;
+            color: white;
+            padding: 2px;
+            margin: 0 2px 0 0;
+            font-size: 16px;
+            text-decoration: none;}
+
+.signIn_button:hover {outline: thin dotted;
+                      background-color: #00F0C5;
+                      }
+
+.slogan { clear: right;
+          font-size: 48px;
+          line-height: 0.2em;
+          padding: 0.1em;
+          color: #FF6699;
+        }
+
+  .TopNav_Bar { float: right;
+                color: white;
+                background-color: #FF6699;
+                border: 2px solid white;
+                padding: 5px 10px;
+                font-size: 20px;
+
+              }
+
+.TopNav_Bar>a { color: white; text-decoration: none;}
+
+.TopNav_Bar>a:hover, a:active { background-color: #646464; outline: thin dotted;}
+
+.TopNav_Bar:visited { color: white; text-decoration: none;}
+
+.TopNav_Bar>a:focus {outline: thin dotted; }
+
+.clearfix:after { visibility: hidden;
+                  display: block;
+                  font-size: 0;
+                  content: " ";
+                  clear: both;
+                  height: 0;
+                  }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+/* ==|== Social Icons =======================================================
+   Sprintes and rollovers
+   ========================================================================== */
+
+.socialMedia_icons {vertical-align:middle;}
+
+.socialMedia_icons ul,li{ list-style:none;
+                          padding: 0;
+                          margin: 0;
+                          height: 23px;
+                          vertical-align:sub;
+                        }
+
+.socialMedia_icons li,a{display:inline-block;}
+.socialMedia_icons li > a{width:23px;height:23px;text-indent:-1200px;overflow:hidden;}
+
+    .icon_facebook,
+    .icon_google,
+    .icon_twitter,
+    .icon_pinterest{background:url('img/social_media_icons.png') white 0 0 no-repeat;}
+
+    .icon_google{background-position:-26px 0;}
+    .icon_twitter{background-position:-53px 0;}
+    .icon_pinterest{background-position:-79px 0;}
+
+    .icon_facebook:hover{background-position:0 -26px;}
+    .icon_google:hover{background-position:-26px -26px;}
+    .icon_twitter:hover{background-position:-53px -26px;}
+    .icon_pinterest:hover{background-position:-79px -26px;}
+
+
+/* ==|== main =======================================================
+  
+   ========================================================================== */    
+.main_body {color: white;
+            /*font-size: 10em;*/
+            }
+
+.leftArrow {float: left;}
+
+.rightArrow {float: right;}
+
+.mainPic {display: block; 
+          margin: 50px auto 10px auto;
+          }
+
+/* ==|== DOTS =======================================================
+   Sprites and rollovers
+   ========================================================================== */
+
+.dots { width: 250px;
+        margin: 0 10px 0 auto;}
+
+    .dot_1,
+    .dot_2,
+    .dot_3,
+    .dot_4{ background:url('img/dots.png') 0 0 no-repeat;
+            height: 50px;
+            width: 50px;
+            display:inline-block;
+            text-indent:-1200px;
+            overflow:hidden;
+            }
+
+    .dot_2{background-position:-50px 0;}
+    .dot_3{background-position:-100px 0;}
+    .dot_4{background-position:-150px 0;}
+
+    .dot_1:hover{background-position:0 -50px;}
+    .dot_2:hover{background-position:-50px -50px;}
+    .dot_3:hover{background-position:-100px -50px;}
+    .dot_4:hover{background-position:-150px -50px;}
+
+
+
+/* ==|== Footer =======================================================
+  
+   ========================================================================== */
+
+footer { background-color: #00F0C5;
+        color: #646464;;
+        font-family: 'Poiret One', sans-serif; 
+        font-weight: 400;
+        padding: 5px;
+        margin: 10px 0 0 0;
+     }
+
+.footerNav {float: left;
+            padding: 5px 10px;
+            background-color: #646464;
+            color: white;
+            border: 1px solid white;}     
+
+.footerNav>a { color: white; text-decoration: none;}
+
+.footerNav>a:hover, a:active {outline: thin dotted;}
+
+.footerNav:visited { color: white; text-decoration: none;}
+
+.footerNav>a:focus {outline: thin dotted; }
+
+.footer_social {float:right;
+                background-color: #FFE323; 
+                padding: 3px 10px 3px 10px;
+                border: 2px solid white;}
+
+.disclaimer {width: 960px;
+              text-align: center;
+              margin: 0 auto 0 auto;
+              clear: both;
+              }
+
